@@ -55,7 +55,8 @@
   "wsh"           : false,
   "yui"           : false,
   "globals": {
-    "MyLibrary": true,
+    "koto": true,
+    "d3": true,
     "console": true,
     "sinon": true,
     "spy": true,

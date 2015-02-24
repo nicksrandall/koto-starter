@@ -1,0 +1,29 @@
+{
+  "name": "koto-starter",
+  "version": "0.0.1",
+  "authors": [
+    "Nick Randall <nick.randall@domo.com>"
+  ],
+  "description": "koto chart starter",
+  "main": "dist/index.js",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "koto",
+    "chart",
+    "d3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "koto": "^0.0.1"
+  }
+}

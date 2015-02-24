@@ -53,5 +53,10 @@
   "rhino"         : false,
   "worker"        : false,
   "wsh"           : false,
-  "yui"           : false
+  "yui"           : false,
+  "globals": {
+    "koto": true,
+    "d3": true,
+    "console": true
+  }
 }
