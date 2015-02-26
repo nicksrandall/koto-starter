@@ -11,6 +11,7 @@ const esperanto = require('esperanto');
 const browserify = require('browserify');
 const runSequence = require('run-sequence');
 const source = require('vinyl-source-stream');
+const connect = require('gulp-connect');
 
 const manifest = require('./package.json');
 const config = manifest.babelBoilerplateOptions;
@@ -154,7 +155,7 @@ gulp.task('build-in-sequence', function(callback) {
 
 // Run the headless unit tests as you make changes.
 gulp.task('watch', function() {
-  gulp.watch(['src/**/*', 'test/**/*', '.jshintrc', 'test/.jshintrc'], ['test']);
+  gulp.watch(['src/**/*', 'test/**/*', '.jshintrc', 'test/.jshintrc'], ['test', 'reload']);
 });
 
 // Set up a livereload environment for our spec runner
@@ -162,6 +163,16 @@ gulp.task('test-browser', ['build-in-sequence'], function() {
   $.livereload.listen({port: 35729, host: 'localhost', start: true});
   return gulp.watch(['src/**/*.js', 'test/**/*', '.jshintrc', 'test/.jshintrc'], ['build-in-sequence']);
 });
+
+gulp.task('connect', function() {
+  connect.server({
+    root: ['www', 'bower_components', 'dist'],
+    port: 1337,
+    livereload: true
+  });
+});
+
+gulp.task('reload', connect.reload);
 
 // An alias of test
 gulp.task('default', ['build']);
