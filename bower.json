@@ -22,6 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "koto": "^0.0.1"
+    "koto": "^0.0.7"
   }
 }

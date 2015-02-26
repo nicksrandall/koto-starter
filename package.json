@@ -61,7 +61,7 @@
     "isparta": "^2.0.0",
     "jsdom": "^4.0.0z",
     "jshint-stylish": "^1.0.0",
-    "koto": "^0.0.6",
+    "koto": "^0.0.7",
     "mkdirp": "^0.5.0",
     "mocha": "^2.1.0",
     "run-sequence": "^1.0.2",
