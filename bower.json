@@ -1,11 +1,9 @@
 {
   "name": "koto-starter",
   "version": "0.0.1",
-  "authors": [
-    "Nick Randall <nick.randall@domo.com>"
-  ],
+  "authors": [],
   "description": "koto chart starter",
-  "main": "dist/index.js",
+  "main": "dist/chart.js",
   "moduleType": [
     "es6",
     "globals"

@@ -12,6 +12,7 @@ global.document.createRange = function() {
 global.window = global.document.parentWindow;
 
 global.d3 = require('d3');
+global.koto = require('koto');
 
 global.chai = require('chai');
 global.sinon = require('sinon');
