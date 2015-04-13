@@ -5,7 +5,7 @@
  * The js file that renders this chart is found `www > js > main.js`
  */
 koto.chart('BarChart', function (Chart) {
-	return class Donut extends Chart {
+	return class BarChart extends Chart {
 		constructor(selection) {
 			super(selection);
 
