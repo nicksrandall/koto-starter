@@ -33,7 +33,8 @@
 
 var dataSrc = new DataSrc();
 
-var barChart = d3.select('#chart').chart('BarChart');
+var barChart = new BarChart(d3.select('#chart'));
+console.log(barChart);
 
 barChart.draw(dataSrc.data);
 
