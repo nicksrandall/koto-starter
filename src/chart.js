@@ -45,12 +45,10 @@ class BarChart extends Koto {
 				.attr('x', function(d, i) { return chart.x(i) - 0.5; });
 		})
 		.on('update:transition', function() {
-			console.log('update');
 			this.duration(1000)
 				.attr('x', function(d, i) { return chart.x(i) - 0.5; });
 		})
 		.on('exit:transition', function() {
-			console.log('remove');
 			this.duration(1000)
 				.attr('x', function(d, i) { return chart.x(i - 1) - 0.5; })
 				.remove();
