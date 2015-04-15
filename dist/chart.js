@@ -7,11 +7,11 @@ var _get = function get(object, property, receiver) { var desc = Object.getOwnPr
 var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
 
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('bower_components/Koto/dist/koto')) : typeof define === 'function' && define.amd ? define(['bower_components/Koto/dist/koto'], factory) : global.BarChart = factory(global.Koto);
-})(this, function (Koto) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('bower_components/Koto/dist/koto')) : typeof define === 'function' && define.amd ? define(['bower_components/Koto/dist/koto'], factory) : global.BarChart = factory(global.BaseChart);
+})(this, function (BaseChart) {
 	'use strict';
 
-	var BarChart = (function (_Koto) {
+	var BarChart = (function (_BaseChart) {
 		function BarChart(selection) {
 			_classCallCheck(this, BarChart);
 
@@ -61,7 +61,7 @@ var _inherits = function (subClass, superClass) { if (typeof superClass !== 'fun
 			});
 		}
 
-		_inherits(BarChart, _Koto);
+		_inherits(BarChart, _BaseChart);
 
 		_createClass(BarChart, [{
 			key: 'preDraw',
@@ -73,7 +73,7 @@ var _inherits = function (subClass, superClass) { if (typeof superClass !== 'fun
 		}]);
 
 		return BarChart;
-	})(Koto);
+	})(BaseChart);
 
 	var chart = BarChart;
 

@@ -57,6 +57,7 @@
   "globals": {
     "Koto": true,
     "d3": true,
+    "AutoWidgets": true,
     "console": true
   }
 }

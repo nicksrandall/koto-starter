@@ -5,7 +5,7 @@
   "requireCurlyBraces": true,
   "requireCommaBeforeLineBreak": true,
   "requireOperatorBeforeLineBreak": true,
-  "disallowTrailingWhitespace": true,
+  "disallowTrailingWhitespace": "ignoreEmptyLines",
   "disallowMultipleLineStrings": true,
   "disallowMixedSpacesAndTabs": true,
   "disallowEmptyBlocks": true

@@ -1,11 +1,11 @@
-import Koto from 'bower_components/Koto/dist/koto.js';
+import BaseChart from 'bower_components/Koto/dist/koto.js';
 /**
  * # A working Bar Chart
  *
  * To see this chart run `gulp connect` and then navigate to localhost:1337.
  * The js file that renders this chart is found `www > js > main.js`
  */
-class BarChart extends Koto {
+class BarChart extends BaseChart {
 	constructor(selection) {
 		super(selection);
 
