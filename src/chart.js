@@ -1,18 +1,25 @@
-import BaseChart from 'bower_components/Koto/dist/koto.js';
+import d3 from 'd3';
+import koto from 'koto';
+import configs from './configs';
+
 /**
  * # A working Bar Chart
  *
- * To see this chart run `gulp connect` and then navigate to localhost:1337.
- * The js file that renders this chart is found `www > js > main.js`
+ * To see this chart run `gulp serve` and then navigate to localhost:1337.
+ * The js file that renders this chart is found `demo > js > main.js`
  */
-class BarChart extends BaseChart {
+
+class BarChart extends koto.Base {
 	constructor(selection) {
 		super(selection);
 
 		// Setup
 		var chart = this;
-		this.config('width', 800);
-		this.config('height', 500);
+
+    // define configs
+    configs.forEach(function (item) {
+      chart.configs.set(item.name, item);
+    });
 
 		// Scales
 		chart.x = d3.scale.linear()
@@ -54,10 +61,13 @@ class BarChart extends BaseChart {
 				.remove();
 		});
 	}
+
 	//override methods
 	preDraw(data) {
 		this.x.domain([0, data.length]);
 	}
 }
 
-export default BarChart;
+// Export
+koto.BarChart = BarChart;
+export default koto.BarChart;

@@ -1,4 +1,3 @@
-// Optional - Used by Domo App Builder
 AutoWidgets.register({
   name: 'BarChart',
   data: [{

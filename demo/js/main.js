@@ -33,8 +33,7 @@
 
 var dataSrc = new DataSrc();
 
-var barChart = new BarChart(d3.select('#chart'));
-console.log(barChart);
+var barChart = new koto.BarChart(d3.select('#chart'));
 
 barChart.draw(dataSrc.data);
 
