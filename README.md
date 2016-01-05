@@ -1,3 +1,6 @@
+# **THIS REPO HAS BEEN DEPRICATED**
+Please use [koto-boilerplate](https://github.com/kotojs/koto-boilerplate)
+
 # koto-starter
 This repo can serve as a boilerplate for building your own components using KotoJS.
 
